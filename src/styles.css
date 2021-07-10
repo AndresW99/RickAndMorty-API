@@ -1,4 +1,12 @@
+body {
+    background-color: rgb(63, 61, 61);
+}
+
 
 .estilo {
     width: 540px;
+    display: inline-flex;
+    margin-left: 70px;
+    margin-right: 15px;
+    margin-top: 25px;
 }

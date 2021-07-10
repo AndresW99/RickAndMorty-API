@@ -14,7 +14,6 @@ export const RickAndMorty = () => {
             Axios.get('https://rickandmortyapi.com/api/character').then((response) => {
         
                 // Muestra en el log solo los resultados que necesitamos para las tarjetas
-                console.log(response.data.results);
                 setPersonajes(response.data.results);
         
             })
@@ -37,5 +36,3 @@ export const RickAndMorty = () => {
         
     )
 }
-
-// TODO: Renderizar los campos en las cartas

@@ -1,13 +1,18 @@
 import React from 'react';
+import { Header } from './components/Header';
 import { RickAndMorty } from './helpers/API';
 
 
 function App() {
   return (
 
-    <div className="container mt-5">
-      <RickAndMorty />
-    </div>
+    <>
+      <Header />
+        <div className="container-fluid">
+
+          <RickAndMorty />
+        </div>
+    </>
 
   );
 }
