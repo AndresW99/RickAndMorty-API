@@ -1,30 +1,27 @@
 import React from 'react';
 import '../styles.css';
-import { rickAndMorty } from '../helpers/API';
 
-export const Cards = () => {
 
-    const handleClick = () => {
+export const Cards = ( props ) => {
 
-        console.log(rickAndMorty());
-
-    }
 
     return (
 
-        <div className="card mb-3 estilo">
-            <div className="row g-0">
-                <div className="col-md-4">
-                    <img src="https://blog.desafiolatam.com/wp-content/uploads/2019/04/react-galaxia.png" className="img-fluid rounded-start" alt="..." />
-                </div>
-                <div className="col-md-8">
-                    <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">Aquí se mostrara la descripción de la API de Rick and Morty. PD: Me quedo mamalona la tarjeta</p>
-                    <button className="btn btn-primary" onClick={ handleClick }>Call API</button>
-                    </div>
+    <div className="card border-success bg-secondary mb-3 estilo card-group">
+        <div className="row g-0">
+            <div className="col-md-4">
+                <img src={ props.chars.image } className="img-fluid rounded-start" alt="" />
+            </div>
+            <div className="col-md-8">
+                <div className="card-body">
+                <h3 className="card-title card-header">{ props.chars.name }</h3>
+                <h6>{ <b>Especie</b> }: &nbsp; { props.chars.species }</h6>
+                <h6>{ <b>Estatus</b> }: &nbsp; { props.chars.status }</h6>
+                <h6>{ <b>Genero</b> }: &nbsp; { props.chars.gender }</h6>
                 </div>
             </div>
         </div>
+    </div>
+
     )
 }

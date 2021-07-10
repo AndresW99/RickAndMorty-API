@@ -1,12 +1,12 @@
 import React from 'react';
-import { Cards } from './pages/cards';
+import { RickAndMorty } from './helpers/API';
 
 
 function App() {
   return (
 
     <div className="container mt-5">
-      <Cards />
+      <RickAndMorty />
     </div>
 
   );
