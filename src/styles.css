@@ -10,3 +10,29 @@ body {
     margin-right: 15px;
     margin-top: 25px;
 }
+
+.card:hover {
+    box-shadow: 5px 10px 20px 1px rgb(255, 255, 255, 0.273) !important;
+    transition: all 0.7s linear;
+}
+
+@media (max-width: 625px) {
+    .estilo {
+      margin-right: 10px;
+      margin-left: 15px;
+      display: inline;
+    }
+}
+
+@media (max-width: 400px) {
+    .estilo {
+      margin-right: 2px;
+      margin-left: 3px;
+    }
+}
+
+@media (max-width: 500px) {
+    .estilo {
+      display: inline;
+    }
+}
